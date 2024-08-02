@@ -1,7 +1,5 @@
 # CoinRoutes Real-Time Chart
 
-![CoinRoutes Real-Time Chart](./path/to/screenshot.png)
-
 ## Table of Contents
 - [Overview](#overview)
 - [Features](#features)
@@ -16,7 +14,7 @@
 CoinRoutes Real-Time Chart is a React-based application designed to display real-time market data for BTC-USD from CoinRoutes. The application connects to the Coinbase WebSocket API to receive live updates of market bids and asks, and visualizes the data using interactive charts and tables.
 
 ## Features
-- Real-time updates of BTC-USD market data
+- Real-time updates of coinbase market data
 - Interactive line charts for visualizing bids and asks
 - Responsive design for seamless experience across devices
 - Authentication with Coinbase API using API keys
@@ -29,12 +27,12 @@ CoinRoutes Real-Time Chart is a React-based application designed to display real
 - Chart.js and react-chartjs-2 for data visualization
 - react-use-websocket for WebSocket connections
 - CryptoJS for API authentication
-- CSS for styling
+- CSS for styling with tailwindcss
 
 ## Installation
 1. **Clone the repository**
     ```bash
-    git clone https://github.com/yourusername/coinroutes-realtime-chart.git
+    git clone https://github.com/belalmoh/coinroutes-task.git
     cd coinroutes-realtime-chart
     ```
 
