@@ -1,8 +1,8 @@
 import CryptoJS from 'crypto-js';
 
-const API_KEY = '687fd22a764219a2f9495ea7384bed92';
-const API_SECRET = '9U04t/gqa8MKjQj0cG7BK1T7zN8wAizmoN6lzliscddU1x6SWRMJ4jVJ9bAZIBuJ5oUSlustDx2ypCSeo7Pfvw==';
-const API_PASSPHRASE = 'ai1d393qtc5';
+const API_KEY = process.env.REACT_APP_API_KEY || '';
+const API_SECRET = process.env.REACT_APP_API_SECRET || '';
+const API_PASSPHRASE = process.env.REACT_APP_API_PASSPHRASE || '';
 
 const generateSignature = (timestamp: number, method: string, requestPath: string, body: string) => {
 	const what = `${timestamp}${method}${requestPath}${body}`;

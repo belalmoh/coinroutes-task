@@ -6,7 +6,7 @@ import { CoinbaseMessage, CoinbaseError, TopOffBook } from "../types/CoinBaseTyp
 
 const useCoinbase = (productId: string) => {
     // will be taken from the .env file
-    const socketUrl = 'wss://ws-feed-public.sandbox.exchange.coinbase.com';
+    const socketUrl = process.env.REACT_APP_SOCKET_URL || '';
 
 	// (bids | asks)[0] -> price 
 	// (bids | asks)[1] -> size
